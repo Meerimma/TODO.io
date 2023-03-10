@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo-List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+<section class="todo" id="todo" style="position:relative">
+    <span style="position:relative;z-index:1;"> </span>
+
+    <div class="container">
+          <h1 class="todo__title"> TODO</h1>
+        <div class="todo__header">
+        <div>
+            <span class="day"></span>
+            <div>
+                <span class="month"></span>
+                <span class="year"></span>
+            </div>
+        </div>
+        <p class="week-day"></p>
+        <p class="hour"></p>
+    </div>
+
+
+    <form class="todo__form">
+        <input  maxlength="15" minlength="5" required class="todo__input" type="text">
+        <button class="todo__btn-add" type="submit">Add</button>
+    </form>
+
+
+    <ul class="todo__list">
+
+    </ul>
+    <h2 class="todo__empty">список пустой</h2>
+
+
+    <button type="button" class="all">All</button>
+    <button type="button" class="done">Done</button>
+    <button type="button" class="importent">Importent</button>
+    <button class="btn-deleteAll" type="button">Delete All</button>
+    <input class="time" type="datetime-local">
+    <h2 class="status"></h2>
+
+    <div class="time-btns">
+        <button class="btn-before" type="button">Get before</button>
+        <button class="btn-after" type="button">Get after</button>
+    </div>
+
+
+
+
+    </div>
+
+</section>
+
+<script src="three.min.js"></script>
+<script src="vanta.clouds.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
